@@ -60,94 +60,144 @@ const projects = [
 const certifications = [
     {
         id: 1,
-        title: "Deep Learning Specialization",
+        title: "Sequence Models",
         issuer: "DeepLearning.AI",
-        date: "June 2022",
-        description: "Comprehensive program covering neural networks, deep learning, and AI applications.",
-        credentialUrl: "https://example.com/cert/1",
-        iconName: "award",
+        date: "March 2025",
+        description: "Advanced sequence modeling with RNNs, LSTMs, GRUs, and Transformers.",
+        credentialUrl: "#",
+        iconName: "code-branch",
         colorClass: "bg-primary-light"
     },
     {
         id: 2,
-        title: "AI for Edge Computing",
-        issuer: "NVIDIA DLI",
-        date: "March 2022",
-        description: "Implementation of AI models on edge devices for real-time processing and analysis.",
-        credentialUrl: "https://example.com/cert/2",
-        iconName: "microchip",
+        title: "Custom Models, Layers, and Loss Functions with TensorFlow",
+        issuer: "DeepLearning.AI",
+        date: "September 2024",
+        description: "Building and customizing deep learning models using TensorFlow and Python.",
+        credentialUrl: "#",
+        iconName: "cube",
         colorClass: "bg-green-100"
     },
     {
         id: 3,
-        title: "IBM Cloud Essentials",
-        issuer: "IBM",
-        date: "November 2021",
-        description: "Cloud computing fundamentals with IBM services for scalable AI and IoT applications.",
-        credentialUrl: "https://example.com/cert/3",
-        iconName: "cloud",
+        title: "AI Fundamentals",
+        issuer: "DataCamp",
+        date: "August 2024",
+        description: "Core AI concepts including LLMs, deep learning, and generative AI techniques.",
+        credentialUrl: "#",
+        iconName: "brain",
         colorClass: "bg-blue-100"
     },
     {
         id: 4,
-        title: "Machine Learning",
-        issuer: "Coursera (Stanford)",
-        date: "August 2021",
-        description: "Comprehensive course on machine learning algorithms, applications, and implementation.",
-        credentialUrl: "https://example.com/cert/4",
-        iconName: "laptop-code",
+        title: "Intermediate Python for Developers",
+        issuer: "DataCamp",
+        date: "August 2024",
+        description: "Intermediate programming concepts and best practices in Python for developers.",
+        credentialUrl: "#",
+        iconName: "code",
         colorClass: "bg-purple-100"
     },
     {
         id: 5,
-        title: "Renewable Energy Systems",
-        issuer: "edX (MIT)",
-        date: "May 2021",
-        description: "Principles of renewable energy generation, storage, and smart grid integration.",
-        credentialUrl: "https://example.com/cert/5",
-        iconName: "bolt",
+        title: "Introduction to Python for Developers",
+        issuer: "DataCamp",
+        date: "August 2024",
+        description: "Introduction to Python programming and scripting fundamentals.",
+        credentialUrl: "#",
+        iconName: "terminal",
         colorClass: "bg-yellow-100"
     },
     {
         id: 6,
-        title: "IoT Foundations",
-        issuer: "Cisco Networking Academy",
-        date: "February 2021",
-        description: "Fundamentals of IoT architecture, protocols, and implementation strategies.",
-        credentialUrl: "https://example.com/cert/6",
-        iconName: "network-wired",
+        title: "Large Language Models (LLMs) Concepts",
+        issuer: "DataCamp",
+        date: "August 2024",
+        description: "Understanding LLMs, their architecture, and their application in AI systems.",
+        credentialUrl: "#",
+        iconName: "language",
         colorClass: "bg-red-100"
+    },
+    {
+        id: 7,
+        title: "Machine Learning Engineering for Production (MLOps) L2",
+        issuer: "Coursera",
+        date: "August 2024",
+        description: "Production-level deployment and management of machine learning pipelines.",
+        credentialUrl: "#",
+        iconName: "cogs",
+        colorClass: "bg-teal-100"
+    },
+    {
+        id: 8,
+        title: "Machine Learning in Production",
+        issuer: "DeepLearning.AI",
+        date: "August 2024",
+        description: "Strategies and tools for deploying and scaling ML systems.",
+        credentialUrl: "#",
+        iconName: "server",
+        colorClass: "bg-indigo-100"
+    },
+    {
+        id: 9,
+        title: "Structuring Machine Learning Projects",
+        issuer: "DeepLearning.AI",
+        date: "August 2024",
+        description: "Frameworks and best practices for planning and structuring ML projects.",
+        credentialUrl: "#",
+        iconName: "project-diagram",
+        colorClass: "bg-pink-100"
+    },
+    {
+        id: 10,
+        title: "Understanding Cloud Computing",
+        issuer: "DataCamp",
+        date: "August 2024",
+        description: "Fundamentals of cloud computing and its applications in data science and AI.",
+        credentialUrl: "#",
+        iconName: "cloud",
+        colorClass: "bg-orange-100"
+    },
+    {
+        id: 11,
+        title: "AI Digital Marketing with Real-World Examples",
+        issuer: "Udemy",
+        date: "July 2024",
+        description: "Using AI for sentiment analysis, recommender systems, and churn prediction in marketing.",
+        credentialUrl: "#",
+        iconName: "chart-line",
+        colorClass: "bg-lime-100"
     }
 ];
 
 // Experience Data
 const experiences = [
     {
+        year: "2023 – 2024",
+        title: "Graduate Project: AIoT-Based Smart Energy Monitoring System",
+        organization: "Batna, Algeria",
+        description: "Developed an AI-powered IoT system for real-time energy tracking, implementing CNN and LSTM models for number recognition and energy prediction, enhancing resource management.",
+        tags: ["AI", "IoT", "Energy Management"]
+    },
+    {
         year: "2023",
-        title: "AI Conference Speaker",
-        organization: "AI Shaping Tomorrow's Life",
-        description: "Presented research on energy optimization using AI at an international conference, discussing real-world applications and future potential.",
-        tags: ["Conference", "Research"]
+        title: "Automation Intern",
+        organization: "Siemens SPA Hydra",
+        description: "Assisted in automating industrial systems, improving efficiency using Siemens technologies, and gained hands-on experience with SIMATIC MANAGER and WINCC EXPLORER.",
+        tags: ["Automation", "Siemens"]
     },
     {
         year: "2022",
-        title: "Engineering Intern",
-        organization: "Siemens Energy",
-        description: "Developed and implemented energy monitoring solutions using AI algorithms to optimize power consumption in industrial environments.",
-        tags: ["Internship", "6 months"]
-    },
-    {
-        year: "2021",
-        title: "Research Assistant",
-        organization: "URAER (Renewable Energy Research Unit)",
-        description: "Assisted in research on renewable energy integration with smart grids, focusing on AI applications for predictive maintenance and energy forecasting.",
-        tags: ["Research", "4 months"]
-    },
-    {
-        year: "2020",
-        title: "Environmental Technology Intern",
+        title: "Renewable Energy Intern",
         organization: "Ministry of Environment",
-        description: "Worked on implementing IoT solutions for environmental monitoring, including air quality sensors and data analysis platforms.",
-        tags: ["Internship", "3 months"]
+        description: "Contributed to solar energy projects, collaborating on sustainability solutions and energy optimization with experts.",
+        tags: ["Renewable Energy", "Sustainability"]
+    },
+    {
+        year: "2022",
+        title: "Research Intern",
+        organization: "Applied Research Unit in Renewable Energies (URAER)",
+        description: "Worked on renewable energy systems, assisting with deployment and improving system efficiency.",
+        tags: ["Research", "Renewable Energy"]
     }
 ];

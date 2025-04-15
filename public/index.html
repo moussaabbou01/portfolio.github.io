@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | AI & IoT Engineer</title>
+    <script src ="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+         emailjs.init( "eLCN52WhPQe_M1lg5");
+        })();
+    </script>
+      
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -166,17 +173,19 @@
                     
                     <div class="education">
                         <h4>Education</h4>
+                    
                         <div class="education-item">
-                            <h4>Master's in Computer Science</h4>
-                            <p class="education-place">Stanford University</p>
-                            <p class="education-date">2020 - 2022</p>
-                            <p class="education-desc">Specialized in Artificial Intelligence and Machine Learning with focus on applications in energy systems.</p>
+                            <h4>Engineer’s & Master’s Degree in AI and Automation</h4>
+                            <p class="education-place">ENREDD, Batna, Algeria</p>
+                            <p class="education-date">2021 – Jul 2024</p>
+                            <p class="education-desc">Dual degree program in Industrial Networks, AI, and Automation. Developed a scalable AIoT-based Smart Energy Monitoring System using ESP32-CAM, web development, and AI for real-time energy analytics.</p>
                         </div>
+                    
                         <div class="education-item">
-                            <h4>Bachelor's in Engineering</h4>
-                            <p class="education-place">MIT</p>
-                            <p class="education-date">2016 - 2020</p>
-                            <p class="education-desc">Focused on IoT systems and embedded software development with minor in renewable energy.</p>
+                            <h4>Preparatory Classes in Engineering Sciences</h4>
+                            <p class="education-place">National Polytechnic School (ENP), El Harrach, Algeria</p>
+                            <p class="education-date">2019 – 2021</p>
+                            <p class="education-desc">Intensive foundation in mathematics, physics, and engineering, with emphasis on problem-solving, teamwork, and technical innovation.</p>
                         </div>
                     </div>
                 </div>
@@ -454,5 +463,42 @@
     <!-- JavaScript -->
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            emailjs.init("moussaab01"); // Replace with your EmailJS user ID
+    
+            let form = document.getElementById("contact-form");
+            let name = document.getElementById("name");
+            let email = document.getElementById("email");
+            let message = document.getElementById("message");
+    
+            form.addEventListener("submit", (e) => {
+                e.preventDefault(); // Prevent form from reloading the page
+    
+                if (name.value !== "" && email.value !== "" && message.value !== "") {
+                    var templateParams = {
+                        name: name.value,
+                        email: email.value,
+                        message: message.value
+                    };
+    
+                    emailjs.send("service_r7357kf", "template_lr83qyi", templateParams)
+                        .then(function (response) {
+                            console.log("SUCCESS!", response.status, response.text);
+                            alert("Your message was sent successfully!");
+                            form.reset();
+                        }, function (error) {
+                            console.log("FAILED...", error);
+                            alert("Failed to send message. Please try again.");
+                        });
+                } else {
+                    alert("Please fill in all fields.");
+                }
+            });
+        });
+    </script>    
+
 </body>
 </html>
+
