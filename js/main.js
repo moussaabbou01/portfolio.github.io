@@ -344,10 +344,36 @@ function initTimelineItems() {
     const timeline = document.querySelector('.timeline');
     
     if (timeline && experiences) {
-        experiences.forEach(experience => {
+        experiences.forEach((experience, index) => {
             const timelineItem = createTimelineItem(experience);
             timeline.appendChild(timelineItem);
+            
+            // Add staggered animation with increasing delay
+            setTimeout(() => {
+                timelineItem.classList.add('animate');
+            }, 300 * (index + 1));
         });
+        
+        // Setup intersection observer for animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // If timeline is visible, ensure all items eventually animate
+                    const items = timeline.querySelectorAll('.timeline-item:not(.animate)');
+                    items.forEach((item, idx) => {
+                        setTimeout(() => {
+                            item.classList.add('animate');
+                        }, 200 * idx);
+                    });
+                    
+                    // Unobserve once triggered
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 }); // Trigger when 20% of the timeline is visible
+        
+        // Start observing the timeline
+        observer.observe(timeline);
     }
 }
 
@@ -358,15 +384,21 @@ function createTimelineItem(experience) {
     
     const tagsHtml = experience.tags.map(tag => `<span class="timeline-tag">${tag}</span>`).join('');
     
+    // Create element with enhanced animation and styling 
     item.innerHTML = `
-        <span class="timeline-badge">${experience.year}</span>
         <div class="timeline-content">
+            <span class="timeline-badge">${experience.year}</span>
             <h3 class="timeline-title">${experience.title}</h3>
             <p class="timeline-organization">${experience.organization}</p>
             <p class="timeline-description">${experience.description}</p>
             <div class="timeline-tags">${tagsHtml}</div>
         </div>
     `;
+    
+    // Add animation delay based on index
+    setTimeout(() => {
+        item.classList.add('animate');
+    }, 200);
     
     return item;
 }
