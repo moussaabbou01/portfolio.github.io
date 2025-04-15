@@ -6,8 +6,8 @@ const projects = [
         description: "A comprehensive system using AI algorithms to monitor, analyze, and optimize energy consumption in real-time.",
         technologies: ["Python", "TensorFlow", "Arduino", "MQTT"],
         featured: true,
-        github: "https://github.com",
-        demo: "https://example.com"
+        // github: "https://github.com",
+        // demo: "https://example.com"
     },
     {
         id: 2,
@@ -15,8 +15,8 @@ const projects = [
         description: "A web application for visualizing energy consumption data with interactive charts and maps for spatial analysis.",
         technologies: ["Laravel", "ApexCharts", "Mapbox", "MySQL"],
         featured: false,
-        github: "https://github.com",
-        demo: "https://example.com"
+        // github: "https://github.com",
+        // demo: "https://example.com"
     },
     {
         id: 3,
@@ -24,8 +24,8 @@ const projects = [
         description: "An AI-powered system that predicts equipment failures before they occur, reducing downtime and maintenance costs.",
         technologies: ["Python", "Scikit-learn", "Flask", "React"],
         featured: false,
-        github: "https://github.com",
-        demo: "https://example.com"
+        // github: "https://github.com",
+        // demo: "https://example.com"
     },
     {
         id: 4,
@@ -33,8 +33,8 @@ const projects = [
         description: "IoT system that optimizes home energy usage through real-time monitoring and automation.",
         technologies: ["IoT", "NodeJS", "MQTT", "React Native"],
         featured: false,
-        github: "https://github.com",
-        demo: null
+        // github: "https://github.com",
+        // demo: null
     },
     {
         id: 5,
@@ -42,8 +42,8 @@ const projects = [
         description: "ML model that predicts renewable energy generation based on weather data and historical patterns.",
         technologies: ["Python", "TensorFlow", "Pandas", "Web"],
         featured: false,
-        github: "https://github.com",
-        demo: "https://example.com"
+        // github: "https://github.com",
+        // demo: "https://example.com"
     },
     {
         id: 6,
@@ -51,8 +51,8 @@ const projects = [
         description: "Edge computing solution that collects and processes sensor data in industrial environments.",
         technologies: ["IoT", "C++", "Python", "MQTT"],
         featured: false,
-        github: "https://github.com",
-        demo: null
+        // github: "https://github.com",
+        // demo: null
     }
 ];
 
