@@ -350,6 +350,14 @@ ul {
     overflow: hidden;
 }
 
+.profile-image img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
 .dark-theme .profile-image {
     border-color: var(--bg-dark);
 }

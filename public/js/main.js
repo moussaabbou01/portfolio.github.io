@@ -595,7 +595,10 @@ function initLoadMoreButtons() {
 }
 
 // Download resume functionality
-document.getElementById('download-resume')?.addEventListener('click', function(e) {
+document.getElementById("download-resume").addEventListener("click", function(e) {
     e.preventDefault();
-    alert('Resume download would be implemented here in a real environment');
+    const link = document.createElement("a");
+    link.href = "Moussaab_Boutelis_AI_ML_CV.pdf"; // Path to your PDF file
+    link.download = "Moussaab_Boutelis_AI_ML_CV.pdf";
+    link.click();
 });
