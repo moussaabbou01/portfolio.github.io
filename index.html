@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | AI & IoT Engineer</title>
-    <script src ="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-         emailjs.init( "eLCN52WhPQe_M1lg5");
-        })();
-    </script>
-      
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -463,42 +456,6 @@
     <!-- JavaScript -->
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            emailjs.init("moussaab01"); // Replace with your EmailJS user ID
-    
-            let form = document.getElementById("contact-form");
-            let name = document.getElementById("name");
-            let email = document.getElementById("email");
-            let message = document.getElementById("message");
-    
-            form.addEventListener("submit", (e) => {
-                e.preventDefault(); // Prevent form from reloading the page
-    
-                if (name.value !== "" && email.value !== "" && message.value !== "") {
-                    var templateParams = {
-                        name: name.value,
-                        email: email.value,
-                        message: message.value
-                    };
-    
-                    emailjs.send("service_r7357kf", "template_lr83qyi", templateParams)
-                        .then(function (response) {
-                            console.log("SUCCESS!", response.status, response.text);
-                            alert("Your message was sent successfully!");
-                            form.reset();
-                        }, function (error) {
-                            console.log("FAILED...", error);
-                            alert("Failed to send message. Please try again.");
-                        });
-                } else {
-                    alert("Please fill in all fields.");
-                }
-            });
-        });
-    </script>    
-
 </body>
 </html>
 
