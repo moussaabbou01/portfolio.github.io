@@ -64,7 +64,7 @@ const certifications = [
         issuer: "DeepLearning.AI",
         date: "March 2025",
         description: "Advanced sequence modeling with RNNs, LSTMs, GRUs, and Transformers.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "code-branch",
         colorClass: "bg-primary-light"
     },
@@ -74,7 +74,7 @@ const certifications = [
         issuer: "DeepLearning.AI",
         date: "September 2024",
         description: "Building and customizing deep learning models using TensorFlow and Python.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "cube",
         colorClass: "bg-green-100"
     },
@@ -84,7 +84,7 @@ const certifications = [
         issuer: "DataCamp",
         date: "August 2024",
         description: "Core AI concepts including LLMs, deep learning, and generative AI techniques.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "brain",
         colorClass: "bg-blue-100"
     },
@@ -94,7 +94,7 @@ const certifications = [
         issuer: "DataCamp",
         date: "August 2024",
         description: "Intermediate programming concepts and best practices in Python for developers.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "code",
         colorClass: "bg-purple-100"
     },
@@ -104,7 +104,7 @@ const certifications = [
         issuer: "DataCamp",
         date: "August 2024",
         description: "Introduction to Python programming and scripting fundamentals.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "terminal",
         colorClass: "bg-yellow-100"
     },
@@ -114,7 +114,7 @@ const certifications = [
         issuer: "DataCamp",
         date: "August 2024",
         description: "Understanding LLMs, their architecture, and their application in AI systems.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "language",
         colorClass: "bg-red-100"
     },
@@ -124,7 +124,7 @@ const certifications = [
         issuer: "Coursera",
         date: "August 2024",
         description: "Production-level deployment and management of machine learning pipelines.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "cogs",
         colorClass: "bg-teal-100"
     },
@@ -134,7 +134,7 @@ const certifications = [
         issuer: "DeepLearning.AI",
         date: "August 2024",
         description: "Strategies and tools for deploying and scaling ML systems.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "server",
         colorClass: "bg-indigo-100"
     },
@@ -144,7 +144,7 @@ const certifications = [
         issuer: "DeepLearning.AI",
         date: "August 2024",
         description: "Frameworks and best practices for planning and structuring ML projects.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "project-diagram",
         colorClass: "bg-pink-100"
     },
@@ -154,7 +154,7 @@ const certifications = [
         issuer: "DataCamp",
         date: "August 2024",
         description: "Fundamentals of cloud computing and its applications in data science and AI.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "cloud",
         colorClass: "bg-orange-100"
     },
@@ -164,7 +164,7 @@ const certifications = [
         issuer: "Udemy",
         date: "July 2024",
         description: "Using AI for sentiment analysis, recommender systems, and churn prediction in marketing.",
-        credentialUrl: "#",
+        credentialUrl: "https://www.linkedin.com/in/boutelis-moussaab/details/certifications/",
         iconName: "chart-line",
         colorClass: "bg-lime-100"
     }
