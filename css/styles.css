@@ -328,6 +328,29 @@ ul {
     justify-content: center;
 }
 
+.btn.linkedin-btn {
+    background-color: #0077b5; /* LinkedIn Blue */
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn.linkedin-btn i {
+    font-size: 1.1rem;
+  }
+  
+  .btn.linkedin-btn:hover {
+    background-color: #005983;
+    transform: translateY(-2px);
+  }
+  
+
 .hero-image {
     position: relative;
     margin-top: 32px;
@@ -515,9 +538,9 @@ section {
     font-size: 0.875rem;
     color: var(--text-light);
 }
-
-.education {
-    margin-bottom: 48px;
+.education h4 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
 }
 
 .education-item {
@@ -610,6 +633,7 @@ section {
 .filter-btn {
     padding: 8px 16px;
     background-color: var(--bg-light);
+    color: var(--text-color);
     border: none;
     border-radius: 100px;
     cursor: pointer;
@@ -625,6 +649,7 @@ section {
     background-color: var(--primary-color);
     color: white;
 }
+
 
 .projects-grid {
     display: grid;
