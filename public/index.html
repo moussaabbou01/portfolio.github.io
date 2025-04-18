@@ -18,6 +18,7 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 </head>
 <body>
     <!-- Header -->
@@ -334,29 +335,35 @@
                 <div class="contact-form-container">
                     <div class="form-card">
                         <h3>Send a Message</h3>
-                        <form id="contact-form">
+                        <form action="https://send.pageclip.co/IYNn9MikmmhPVdbvvkelU5oNm5UZFaMy/contact_from" 
+                              class="pageclip-form" 
+                              method="POST">
+                            
                             <div class="form-group">
                                 <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your name">
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
                                 <div id="name-error" class="error-message"></div>
                             </div>
+        
                             <div class="form-group">
                                 <label for="email">Your Email</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email">
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
                                 <div id="email-error" class="error-message"></div>
                             </div>
+        
                             <div class="form-group">
                                 <label for="message">Your Message</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+                                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
                                 <div id="message-error" class="error-message"></div>
                             </div>
-                            <button type="submit" class="btn primary-btn submit-btn">
+        
+                            <button type="submit" class="btn primary-btn submit-btn pageclip-form__submit">
                                 <span id="submit-text">Send Message</span> <i class="fas fa-paper-plane"></i>
                             </button>
                         </form>
                     </div>
                 </div>
-                
+                        
                 <div class="contact-info-container">
                     <div class="info-card">
                         <h3>Contact Information</h3>
@@ -456,6 +463,8 @@
     <!-- JavaScript -->
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
 </body>
 </html>
 
