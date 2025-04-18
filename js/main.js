@@ -290,33 +290,42 @@ function createCertificationCard(cert) {
     card.setAttribute('data-id', cert.id);
     
     let iconClass;
-    switch (cert.iconName) {
-        case 'award':
-            iconClass = 'fas fa-award';
-            break;
-        case 'microchip':
-            iconClass = 'fas fa-microchip';
-            break;
-        case 'cloud':
-            iconClass = 'fas fa-cloud';
-            break;
-        case 'laptop-code':
-            iconClass = 'fas fa-laptop-code';
-            break;
-        case 'bolt':
-            iconClass = 'fas fa-bolt';
-            break;
-        case 'network-wired':
-            iconClass = 'fas fa-network-wired';
-            break;
-        default:
-            iconClass = 'fas fa-certificate';
+    let iconHTML;
+
+    // Handle custom icons (e.g., DataCamp, Coursera)
+    if (cert.iconUrl) {
+        iconHTML = `<img src="${cert.iconUrl}" alt="${cert.issuer}" class="cert-icon">`;
+    } else {
+        // Fallback for other icons
+        switch (cert.iconName) {
+            case 'award':
+                iconClass = 'fas fa-award';
+                break;
+            case 'microchip':
+                iconClass = 'fas fa-microchip';
+                break;
+            case 'cloud':
+                iconClass = 'fas fa-cloud';
+                break;
+            case 'laptop-code':
+                iconClass = 'fas fa-laptop-code';
+                break;
+            case 'bolt':
+                iconClass = 'fas fa-bolt';
+                break;
+            case 'network-wired':
+                iconClass = 'fas fa-network-wired';
+                break;
+            default:
+                iconClass = 'fas fa-certificate';
+        }
+        iconHTML = `<i class="${iconClass}"></i>`;
     }
     
     card.innerHTML = `
         <div class="cert-header">
             <div class="cert-icon ${cert.colorClass}">
-                <i class="${iconClass}"></i>
+                ${iconHTML}
             </div>
             <div>
                 <h3 class="cert-title">${cert.title}</h3>

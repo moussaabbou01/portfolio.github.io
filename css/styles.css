@@ -827,14 +827,11 @@ section {
 }
 
 .cert-icon {
-    width: 48px;
+    width: 48px; /* Adjust the size as needed */
     height: 48px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-    font-size: 1.25rem;
+    object-fit: contain;  /* Ensures the image doesn't get distorted */
+    max-width: 100%;       /* Ensures the image doesn't exceed container size */
+    max-height: 100%;
 }
 
 .cert-title {
