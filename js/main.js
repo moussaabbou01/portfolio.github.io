@@ -598,7 +598,6 @@ function initLoadMoreButtons() {
 document.getElementById("download-resume").addEventListener("click", function(e) {
     e.preventDefault();
     const link = document.createElement("a");
-    link.href = "Moussaab_Boutelis_AI_ML_CV.pdf"; // Path to your PDF file
-    link.download = "Moussaab_Boutelis_AI_ML_CV.pdf";
+    link.href = "https://drive.google.com/file/d/1kmUcuLVltbeWdufDXPfFYSaeecdDvug6/view?usp=sharing"; // Path to your PDF file
     link.click();
 });
