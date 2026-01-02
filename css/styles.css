@@ -2327,9 +2327,13 @@ section {
 
 /* ===== Footer ===== */
 .footer {
-    background-color: var(--bg-dark);
-    color: white;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: #ffffff;
     padding: 40px 0;
+}
+
+.dark-theme .footer {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
 .footer-content {
@@ -2344,10 +2348,11 @@ section {
 .footer-logo a {
     font-size: 1.5rem;
     font-weight: 700;
+    color: #ffffff;
 }
 
 .footer-logo span {
-    color: var(--primary-color);
+    color: var(--primary-light);
 }
 
 .footer-links {
@@ -2355,8 +2360,13 @@ section {
     gap: 24px;
 }
 
+.footer-links a {
+    color: #e2e8f0;
+    transition: var(--transition);
+}
+
 .footer-links a:hover {
-    color: var(--primary-color);
+    color: var(--primary-light);
 }
 
 .footer-bottom {
@@ -2366,7 +2376,11 @@ section {
     flex-wrap: wrap;
     gap: 16px;
     padding-top: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    color: #cbd5e1;
 }
 
 .footer-legal {
@@ -2374,8 +2388,13 @@ section {
     gap: 24px;
 }
 
+.footer-legal a {
+    color: #cbd5e1;
+    transition: var(--transition);
+}
+
 .footer-legal a:hover {
-    color: var(--primary-color);
+    color: var(--primary-light);
 }
 
 /* ===== Toast Notification ===== */
@@ -2702,10 +2721,14 @@ section {
 /* ===== Statistics Section ===== */
 .statistics-section {
     padding: 80px 0;
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #1e293b, #334155);
     color: white;
     position: relative;
     overflow: hidden;
+}
+
+.dark-theme .statistics-section {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
 .statistics-section::before {
@@ -2727,7 +2750,7 @@ section {
     z-index: 2;
 }
 
-.stat-item {
+.statistics-section .stat-item {
     text-align: center;
     padding: 40px 20px;
     border-radius: var(--border-radius-lg);
@@ -2737,30 +2760,29 @@ section {
     transition: var(--transition);
 }
 
-.stat-item:hover {
+.statistics-section .stat-item:hover {
     transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.15);
 }
 
-.stat-icon {
+.statistics-section .stat-icon {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: #ffffff;
     opacity: 0.9;
 }
 
-.stat-number {
+.statistics-section .stat-number {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 16px;
-    background: linear-gradient(45deg, #fff, #f0f0f0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
 }
 
-.stat-label {
+.statistics-section .stat-label {
     font-size: 1.1rem;
-    opacity: 0.9;
+    color: #e2e8f0;
+    opacity: 0.95;
     font-weight: 500;
 }
 
