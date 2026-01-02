@@ -4,7 +4,7 @@
 
 ### AI Engineer at Sonatrach | Deep Learning Specialist | Generative AI Expert
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://moussaabbou01.github.io/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://moussaab-boutelis.me/)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github)](https://github.com/moussaabbou01)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/moussaab-boutelis)
 
