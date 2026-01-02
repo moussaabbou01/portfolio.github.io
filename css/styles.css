@@ -2357,7 +2357,9 @@ section {
 
 .footer-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+    justify-content: center;
 }
 
 .footer-links a {
@@ -3143,6 +3145,16 @@ section {
         gap: 30px;
         text-align: center;
     }
+    
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+    
+    .footer-links a {
+        font-size: 0.9rem;
+    }
 }
 
 /* Small Mobile (max-width: 575px) */
@@ -3290,6 +3302,25 @@ section {
     
     .cert-card {
         padding: 20px;
+    }
+    
+    .footer {
+        padding: 30px 0;
+    }
+    
+    .footer-links {
+        gap: 12px;
+    }
+    
+    .footer-links a {
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+    
+    .footer-legal {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
