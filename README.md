@@ -394,7 +394,7 @@ This project is **open source** and available for personal and educational use.
 ### Moussaab Boutelis
 **AI Engineer at Sonatrach**
 
-[![Email](https://img.shields.io/badge/Email-moussaabboutelis%40gmail.com-red?style=for-the-badge&logo=gmail)](mailto:moussaabboutelis@gmail.com)
+[![Website](https://img.shields.io/badge/Website-moussaab--boutelis.me-green?style=for-the-badge&logo=google-chrome)](https://moussaab-boutelis.me)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-moussaab--boutelis-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/moussaab-boutelis)
 [![GitHub](https://img.shields.io/badge/GitHub-moussaabbou01-black?style=for-the-badge&logo=github)](https://github.com/moussaabbou01)
 
