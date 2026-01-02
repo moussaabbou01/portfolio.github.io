@@ -6,26 +6,29 @@ const projects = [
         description: "Professional web application for HSE (Health, Safety & Environment) accident management at Sonatrach GL1K. Uses RAG (Retrieval-Augmented Generation) technology combined with AI to analyze historical accidents, identify root causes, generate preventive recommendations, and produce professional PDF/Word reports.",
         technologies: ["Python", "RAG", "LLM", "Streamlit", "NLP", "Generative AI"],
         featured: true,
+        isNew: true,
+        status: "In Development",
         github: "https://github.com/moussaabbou01",
         highlights: ["RAG-powered analysis", "Root cause identification", "Automated report generation", "HSE domain expertise"]
     },
     {
         id: 2,
-        title: "AI Insight Daily: 5 Concepts, 5 Minutes",
-        description: "Automated daily AI learning system that sends beautiful HTML emails with 5 new AI concepts every day. Features smart tracking to avoid duplicates, responsive design, and runs 100% free on GitHub Actions with zero maintenance.",
-        technologies: ["Python", "GitHub Actions", "Email Automation", "AI Education"],
+        title: "AI & IoT-based Energy Monitoring System",
+        description: "A comprehensive system using AI algorithms to monitor, analyze, and optimize energy consumption in real-time. Developed as graduation project at ENREDD using ESP32-CAM devices and AI technologies.",
+        technologies: ["Python", "TensorFlow", "Arduino", "MQTT", "IoT", "ESP32"],
         featured: true,
-        github: "https://github.com/moussaabbou01/ai-insight-daily",
-        highlights: ["Daily AI concepts", "No duplicate topics", "Beautiful HTML emails", "Zero maintenance"]
+        status: "Completed",
+        highlights: ["Real-time monitoring", "AI predictions", "ESP32-CAM integration", "Web dashboard"]
     },
     {
         id: 3,
-        title: "AI & IoT-based Energy Monitoring System",
-        description: "A comprehensive system using AI algorithms to monitor, analyze, and optimize energy consumption in real-time.",
-        technologies: ["Python", "TensorFlow", "Arduino", "MQTT"],
-        featured: true,
-        // github: "https://github.com",
-        // demo: "https://example.com"
+        title: "AI Insight Daily: 5 Concepts, 5 Minutes",
+        description: "Automated daily AI learning system that sends beautiful HTML emails with 5 new AI concepts every day. Features smart tracking to avoid duplicates, responsive design, and runs 100% free on GitHub Actions with zero maintenance.",
+        technologies: ["Python", "GitHub Actions", "Email Automation", "AI Education"],
+        featured: false,
+        status: "Completed",
+        github: "https://github.com/moussaabbou01/ai-insight-daily",
+        highlights: ["Daily AI concepts", "No duplicate topics", "Beautiful HTML emails", "Zero maintenance"]
     },
 ];
 
