@@ -3148,7 +3148,7 @@ section {
 /* Small Mobile (max-width: 575px) */
 @media (max-width: 575px) {
     .container {
-        padding: 0 16px;
+        padding: 0 12px;
     }
     
     .hero-section {
@@ -3296,7 +3296,7 @@ section {
 /* Extra Small (max-width: 374px) */
 @media (max-width: 374px) {
     .container {
-        padding: 0 12px;
+        padding: 0 8px;
     }
     
     .hero-section {
@@ -3395,6 +3395,38 @@ section {
     .filter-btn {
         padding: 10px 14px;
         font-size: 0.85rem;
+    }
+}
+
+/* Very Small Screens (max-width: 340px) */
+@media (max-width: 340px) {
+    .container {
+        padding: 0 6px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-text p {
+        font-size: 0.8rem;
+    }
+    
+    .profile-image {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .section-title h2 {
+        font-size: 1.2rem;
+    }
+    
+    .stat-item {
+        padding: 14px 8px;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
     }
 }
 
