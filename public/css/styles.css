@@ -2760,6 +2760,153 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
+/* ===== Professional Enhancements ===== */
+
+/* Smooth gradient text for headings */
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Enhanced button hover effects */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Glowing effect for featured items */
+.featured-badge {
+    animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 5px var(--primary-color);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--secondary-color);
+    }
+}
+
+/* Enhanced stat items with gradient border */
+.stat-item {
+    position: relative;
+    background: var(--bg-color);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.stat-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+/* Improved experience tags */
+.experience-tag {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.experience-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+/* Animated skill bars */
+.skill-progress {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Enhanced section titles */
+.section-title h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+/* Floating animation for profile image */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.profile-image {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Improved card hover states */
+.cert-card,
+.education-row,
+.experience-row {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cert-card:hover,
+.education-row:hover,
+.experience-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .cert-card:hover,
+.dark-theme .education-row:hover,
+.dark-theme .experience-row:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
 /* ===== Mobile Responsive Enhancements ===== */
 @media (max-width: 768px) {
     .stats-grid {
@@ -2777,6 +2924,10 @@ section {
     
     .social-links {
         justify-content: center;
+    }
+    
+    .profile-image {
+        animation: none;
     }
 }
 

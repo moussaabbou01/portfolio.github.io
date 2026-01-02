@@ -39,7 +39,7 @@ public/
 ## Code Patterns
 
 ### Theme System
-Uses CSS custom properties in `:root` and `.dark-theme` selectors in [styles.css](public/css/styles.css#L1-L35):
+Uses CSS custom properties in `:root` and `.dark-theme` selectors in [styles.css](public/css/styles css#L1-L35):
 ```css
 :root { --primary-color: #4361ee; --bg-color: #ffffff; }
 .dark-theme { --bg-color: #121212; }
