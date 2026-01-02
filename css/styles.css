@@ -3408,6 +3408,10 @@ section {
         font-size: 1.3rem;
     }
     
+    .hero-text h2 {
+        font-size: 0.85rem;
+    }
+    
     .hero-text p {
         font-size: 0.8rem;
     }
@@ -3427,6 +3431,119 @@ section {
     
     .stat-number {
         font-size: 1.5rem;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    
+    .footer-legal a {
+        font-size: 0.8rem;
+    }
+    
+    .footer-logo a {
+        font-size: 1.2rem;
+    }
+    
+    .form-card,
+    .info-card,
+    .social-card {
+        padding: 20px 12px;
+    }
+    
+    .form-card h3,
+    .info-card h3,
+    .social-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.85rem;
+        padding: 10px 12px;
+    }
+}
+
+/* Ultra Small Screens (max-width: 200px) */
+@media (max-width: 200px) {
+    .container {
+        padding: 0 4px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.1rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 0.75rem;
+    }
+    
+    .hero-text p {
+        font-size: 0.7rem;
+    }
+    
+    .hero-btns .btn {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .section-title h2 {
+        font-size: 1rem;
+    }
+    
+    .section-title p {
+        font-size: 0.7rem;
+    }
+    
+    section {
+        padding: 30px 0;
+    }
+    
+    .footer {
+        padding: 20px 0;
+    }
+    
+    .footer-content {
+        gap: 16px;
+    }
+    
+    .footer-logo a {
+        font-size: 1rem;
+    }
+    
+    .footer-links a,
+    .footer-legal a {
+        font-size: 0.75rem;
+    }
+    
+    .form-card,
+    .info-card,
+    .social-card {
+        padding: 16px 8px;
+    }
+    
+    .form-card h3,
+    .info-card h3,
+    .social-card h3 {
+        font-size: 1rem;
+        margin-bottom: 16px;
     }
 }
 
