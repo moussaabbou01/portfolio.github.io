@@ -265,10 +265,18 @@ function createProjectCard(project) {
     card.className = 'project-card reveal';
     card.setAttribute('data-id', project.id);
     
+    // Determine badge type
+    let badgeHtml = '';
+    if (project.isNew && project.status === 'In Development') {
+        badgeHtml = '<div class="featured-badge new-project">🚧 In Development</div>';
+    } else if (project.featured) {
+        badgeHtml = '<div class="featured-badge">⭐ Featured</div>';
+    }
+    
     const imageHtml = project.image ? `
         <div class="project-image">
             <img src="${project.image}" alt="${project.title}" loading="lazy" class="lazy" />
-            ${project.featured ? '<div class="featured-badge">Featured</div>' : ''}
+            ${badgeHtml}
         </div>
     ` : `
         <div class="project-image placeholder">
@@ -277,7 +285,7 @@ function createProjectCard(project) {
                 <path d="M12 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            ${project.featured ? '<div class="featured-badge">Featured</div>' : ''}
+            ${badgeHtml}
         </div>
     `;
     
